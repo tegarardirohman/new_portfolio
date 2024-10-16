@@ -23,7 +23,7 @@ const Hero = () => {
     gsap.to(".bg-text", {
       yPercent: -40,
       scale: 1.1,
-      opacity: 0.8,
+      opacity: 0.9,
       ease: "none",
       scrollTrigger: {
         trigger: ".parallax-bg",

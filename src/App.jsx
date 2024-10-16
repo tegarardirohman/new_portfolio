@@ -8,6 +8,10 @@ import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import ScrollToPlugin from "gsap/ScrollToPlugin"
 import _ScrollTrigger from "gsap/ScrollTrigger"
+import TechStack from "./components/TechStack"
+import MarqueeText from "./components/MarqueeText"
+import useSmoothScroll from "./hooks/useSmoothScroll"
+import useLocomotiveScroll from "./hooks/useLocomotiveScroll"
 
 
 // register plugins
@@ -20,6 +24,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <MarqueeText />
       <Project />
       <Achievement />
       <Contact />

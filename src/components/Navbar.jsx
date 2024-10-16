@@ -6,9 +6,12 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
   const handleScrollTo = (target) => {
+    const targetElement = document.querySelector(target);
+    const offset = target === "#hero" ? 0 : targetElement.offsetTop; // Atur offset untuk Hero ke 0
+
     gsap.to(window, {
-      duration: 0.5, // Animation duration in seconds
-      scrollTo: { y: target, autoKill: false }, // Scroll to the target
+      duration: 1, // Durasi scroll
+      scrollTo: { y: offset, autoKill: false }, // Scroll ke target
     });
   };
 

@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
-  scroll-behavior: smooth !important;
+}
+
+
+[data-scroll-container] {
+  position: relative;
+  /* height: 100vh;  */
+}
+
+.is-reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
